@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0061)https://fintrann.github.io/DMST103-Twine-Game/queertrain.html -->
 <html>
 
 <head>
@@ -1993,27 +1992,23 @@
 
 		}
 	</style>
+	<style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story{
+		background-color: #023020
+		color: black;
+		  font-family: 'Courier';
+		  
+	}
+	</style>
 </head>
 
 <body>
 
 	<tw-storydata name="Queer Train" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe"
 		format-version="3.3.3" ifid="7F065B09-8702-4AC2-9168-C29F5047CFE8" options="" tags="" zoom="1" hidden="">
-		<style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story{
-	background-color: #023020
-    color: black;
-  	font-family: 'Courier';
-  	
-}
-</style>
-		<script role="script" id="twine-user-script" type="text/twine-javascript">var audio= document.createElement('audio');
-audio.src='https://github.com/fintrann/DMST103-Twine-Game/blob/main/loveatfirstsight.mp3';
-audio.loop = true;
-audio.play();
-</script>
+		
+
 		<tw-passagedata pid="1" name="start" tags="1" position="625,250" size="100,100">(set:$name to (prompt:"Enter
 			your name: ", "Default Name"))
-
 
 
 			Hi $name! Have you eaten yet?
@@ -2141,15 +2136,25 @@ audio.play();
 			&lt;img src="images/DInner/Dine-in/c68d24ef10350f6c330c6ff82a5af8b.jpg" width = "100%"&gt;
 
 			&lt;img src="images/DInner/Dine-in/c0450b6f73b16404e199ea897937a8b.jpg" width = "100%"&gt;
-			[[And American desserts]]
+			[[And desserts]]
 			[[I am done]]
 		</tw-passagedata>
-		<tw-passagedata pid="2" name="And American desserts" tags="" position="625,375" size="100,100">
 
+
+		<tw-passagedata pid="2" name="And desserts" tags="" position="625,375" size="100,100">
+			{
+				(set: $zpphoto to (random: 4))
+			}
 			Delicious dessert
+				(if: $zpphoto is 0)[&lt;img src="images/DInner/Dessert/1.jpg" width = "800"&gt;]
+				(elseif: $zpphoto is 1)[&lt;img src="images/DInner/Dessert/2.jpg" width = "800"&gt;]
+				(elseif: $zpphoto is 2)[&lt;img src="images/DInner/Dessert/3.jpg" width = "800"&gt;]
+				(elseif: $zpphoto is 3)[&lt;img src="images/DInner/Dessert/4.jpg" width = "800"&gt;]
+				(elseif: $zpphoto is 4)[&lt;img src="images/DInner/Dessert/5.jpg" width = "800"&gt;]
+			
 
-			&lt;img src="images/DInner/Dessert/0fc8cf206e8f07f5d2673737cfed5bc.jpg" width = "800"&gt;
-			&lt;img src="images/DInner/Dessert/fb85ddf3624fa885fd605e93f22373b.jpg" width = "800"&gt;
+
+		
 
 
 			[[I am done]]
@@ -2161,19 +2166,11 @@ audio.play();
 
 			&lt;img src="images/DInner/Dine-in/569bf61c7a38eef9cd7b967348c5895.jpg" width = "100%"&gt;
 
-			[[And Chinese desserts]]
+			[[And desserts]]
 			[[I am done]]
 		</tw-passagedata>
+		
 
-		<tw-passagedata pid="2" name="And Chinese desserts" tags="" position="625,375" size="100,100">
-
-			Delicious dessert
-
-			&lt;img src="images/DInner/Dessert/e6f314316576a1818efff7b03a7adde.jpg" width = "900"&gt;
-
-
-			[[I am done]]
-		</tw-passagedata>
 
 		<tw-passagedata pid="2" name="Japanese cuisine" tags="" position="625,375" size="100,100">
 
@@ -2193,17 +2190,7 @@ audio.play();
 			&lt;img src="images/DInner/Dine-in/0068c69bfbcf546a5d2476e52bb2613.jpg" width = "100%"&gt;
 
 
-			[[And Japanese desserts]]
-			[[I am done]]
-		</tw-passagedata>
-
-		<tw-passagedata pid="2" name="And Japanese desserts" tags="" position="625,375" size="100,100">
-
-			Delicious dessert
-
-			&lt;img src="images/DInner/Dessert/96b91a0f174b95f74e8b7c82264c06f.jpg" width = "900"&gt;
-
-
+			[[And desserts]]
 			[[I am done]]
 		</tw-passagedata>
 
@@ -2239,9 +2226,7 @@ audio.play();
 
 			&lt;img src="images/DInner/home-made/gif 1.gif" width = "900"&gt;
 
-			[[And American desserts]]
-			[[And Chinese desserts]]
-			[[And Japanese desserts]]
+			[[And desserts]]
 			[[I am done]]
 
 		</tw-passagedata>
@@ -2259,9 +2244,7 @@ audio.play();
 
 			&lt;img src="images/DInner/home-made/gif 2.gif" width = "900"&gt;
 
-			[[And American desserts]]
-			[[And Chinese desserts]]
-			[[And Japanese desserts]]
+			[[And desserts]]
 			[[I am done]]
 
 		</tw-passagedata>
@@ -2272,9 +2255,7 @@ audio.play();
 			player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
 			picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
-			[[And American desserts]]
-			[[And Chinese desserts]]
-			[[And Japanese desserts]]
+			[[And desserts]]
 			[[I am done]]
 
 		</tw-passagedata>
@@ -2297,9 +2278,7 @@ audio.play();
 			
 			&lt;img src="images/DInner/take out/c0341c25fa20d51d24c2c6672b0b6a0.jpg" width = "900"&gt;
 
-			[[And American desserts]]
-			[[And Chinese desserts]]
-			[[And Japanese desserts]]
+			[[And desserts]]
 			[[I am done]]
 
 		</tw-passagedata>
